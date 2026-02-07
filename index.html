@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mary Rickel's Website</title>
+    <title>Mary Rickel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            text-align: center; /* Center align text for all elements */
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 60px 30px;
         }
 
         h1 {
-            color: #333366;
-            margin-top: 50px;
+            color: #1f3b4d;
         }
 
         p {
-            color: #666666;
             font-size: 18px;
+            line-height: 1.6;
         }
 
-        img {
+        a {
+            color: #1f3b4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links {
             margin-top: 20px;
-            border-radius: 10px; /* Rounded corners for image */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding a slight shadow to the image */
         }
 
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #45a049; /* Slightly darker green background on hover */
+        .links a {
+            margin-right: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>Mary Rickel</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Happy Ice Cream GIF" />
-    
-    <button onclick="displayMessage()">Click Me!</button>
+    <div class="container">
+        <h1>Mary Rickel</h1>
 
-    <script>
-        function displayMessage() {
-            alert('Thanks for visiting my website!');
-        }
-    </script>
+        <p>
+        PhD Student in Astrophysics — University of Notre Dame.  
+        I study neutral hydrogen (H I) in the circumgalactic medium (CGM) of nearby galaxies 
+        using radio observations (GBT, WSRT) and optical spectroscopy.
+        </p>
+
+        <div class="links">
+            <a href="cv.pdf">CV</a> |
+            <a href="https://github.com/Mary-Rickel">GitHub</a> |
+            <a href="mailto:your-email@nd.edu">Email</a>
+        </div>
+    </div>
 </body>
 </html>
